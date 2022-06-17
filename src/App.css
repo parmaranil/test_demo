@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap");
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Manrope";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --bgcolor: rgb(24, 65, 199);
+  --btnbgcolor: rgb(101, 74, 165)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.site-wrappe {
+  min-width: 100vw;
+  /* background: rgb(49, 48, 48); */
+  background: black;
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.legal-desk-img {
+  width: 800px;
+  height: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.testimonial-card {
+  position: relative;
+  background: rgb(54, 54, 54);
+  width: 21rem;
+  height: 21rem;
+  padding-top: 3.5vmin;
+  margin: 1rem;
+}
+
+.email-sent-error {
+  position: absolute;
+  right: 25px;
+  top: 15px;
 }
