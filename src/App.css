@@ -10,14 +10,31 @@ body {
 }
 
 :root {
-  --bgcolor: rgb(24, 65, 199);
-  --btnbgcolor: rgb(101, 74, 165)
+  --bgcolor: #3869f1;
+  --theme-color: #4834d4;
+}
+
+.theme-bgcolor {
+  background-color: var(--bgcolor) !important;
+}
+
+.theme-text-color {
+  color: var(--theme-color);
+}
+
+.test-about-us {
+  text-decoration: none;
+}
+
+.test-about-us:hover {
+  background: var(--bgcolor) !important;
+  color: white !important;
 }
 
 .site-wrappe {
   min-width: 100vw;
   /* background: rgb(49, 48, 48); */
-  background: black;
+  background: rgb(31, 29, 29);
   position: relative;
   height: 100vh;
   overflow-y: auto;

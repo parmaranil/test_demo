@@ -2,34 +2,29 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft, faStarHalfStroke, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+// import { faMemo } from '@fortawesome/free-regular-svg-icons'
 const Header = () => {
     return (< >
         <div className="site-wrappe">
-            <section className="container">
-                <nav className="navbar navbar-expand-lg navbar-light py-0 mt-4">
-                    <a className="navbar-brand" href="#">
-                        <span className="rounded-circle bg-primary p-1 btn">logo</span>
-                    </a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon text-white me-2">More</span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav ms-auto">
-                            <li className="nav-item active me-3">
-                                <a className="nav-link text-secondary me-5" href="#">About us</a>
-                            </li>
-                            <li className="nav-item pt-0">
-                                <a className="nav-link btn bg-primary rounded-0 text-white px-4" href="#">Enquire Now</a>
-                            </li>
-                        </ul>
+            <section className="container mt-5">
+                <div className="row">
+                    <div className="col-md-6">
+                        <span className="btn rounded-circle bg-primary p-3">
+                        </span>
                     </div>
-                </nav>
+                    <div className="col-md-6">
+                        <div className="float-end">
+                            <a className="text-secondary btn rounded-0 me-5 px-4 test-about-us" href="#">About us</a>
+                            <a className="btn theme-bgcolor rounded-0 text-white px-4" href="#">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
             </section>
             <main>
                 <section className="section-2 container text-center mt-5">
 
                     <h1 className="text-white fw-bold mb-0 ">Create Your Legal Documents In</h1>
-                    <p className="fs-1 fw-bold text-primary my-0 ">Minutes</p>
+                    <p className="fs-1 fw-bold theme-text-color my-0 ">Minutes</p>
                     <p className="text-muted lead blockquote fw-light">
                         LegalDesk.com is india's trusted,Do-it-Yourself platform for
                         making legal documnets online. The process of making legal
@@ -60,7 +55,7 @@ const Header = () => {
                         <div className="col-md-4 mt-1 mb-3">
                             <div className="text-center mb-2">
                                 <span className="btn rounded-circle bg-primary p-2">
-                                    <FontAwesomeIcon icon={faStarHalfStroke} className="px-1" />
+                                    <FontAwesomeIcon icon={faStarHalfStroke} className="p-2 fa-lg" />
                                 </span>
                             </div>
                             <h6 className="text-white fw-bold">Cosumize Your Documents</h6>
@@ -74,7 +69,7 @@ const Header = () => {
                         <div className="col-md-4 mt-1 mb-3">
                             <div className="text-center mb-2">
                                 <span className="btn rounded-circle bg-primary p-2">
-                                    abc
+                                    <FontAwesomeIcon icon={faStarHalfStroke} className="p-2 fa-lg" />
                                 </span>
                             </div>
                             <h6 className="text-white fw-bold">Avail stamp paper services</h6>
@@ -88,8 +83,9 @@ const Header = () => {
                         </div>
                         <div className="col-md-4 mt-1 mb-3">
                             <div className="text-center mb-2">
-                                <span className="btn rounded-circle bg-primary p-2">abc</span>
-                            </div>
+                                <span className="btn rounded-circle bg-primary p-2">
+                                    <FontAwesomeIcon icon={faStarHalfStroke} className="p-2 fa-lg" />
+                                </span>                            </div>
                             <h6 className="text-white fw-bold">Get Door stap Delivery</h6>
                             <p className="text-muted small text-center  fw-light">
                                 Duis aute irule dolor in reprehenderit
@@ -100,8 +96,9 @@ const Header = () => {
                         </div>
                         <div className="col-md-4 mt-1 mb-3">
                             <div className="text-center mb-2">
-                                <span className="btn rounded-circle bg-primary p-2">abc</span>
-                            </div>
+                                <span className="btn rounded-circle bg-primary p-2">
+                                    <FontAwesomeIcon icon={faStarHalfStroke} className="p-2 fa-lg" />
+                                </span>                            </div>
                             <h6 className="text-white fw-bold">Get Door stap Delivery</h6>
                             <p className="text-muted small text-center fw-light">
                                 Duis aute irule dolor in reprehenderit
@@ -112,8 +109,9 @@ const Header = () => {
                         </div>
                         <div className="col-md-4 mt-1 mb-3">
                             <div className="text-center mb-2">
-                                <span className="btn rounded-circle bg-primary p-2">abc</span>
-                            </div>
+                                <span className="btn rounded-circle bg-primary p-2">
+                                    <FontAwesomeIcon icon={faStarHalfStroke} className="p-2 fa-lg" />
+                                </span>                            </div>
                             <h6 className="text-white fw-bold">Get Door stap Delivery</h6>
                             <p className="text-muted small text-center fw-light">
                                 Duis aute irule dolor in reprehenderit
@@ -124,8 +122,9 @@ const Header = () => {
                         </div>
                         <div className="col-md-4 mt-1 mb-3">
                             <div className="text-center mb-2">
-                                <span className="btn rounded-circle bg-primary p-2">abc</span>
-                            </div>
+                                <span className="btn rounded-circle bg-primary p-2">
+                                    <FontAwesomeIcon icon={faStarHalfStroke} className="p-2 fa-lg" />
+                                </span>                            </div>
                             <h6 className="text-white fw-bold">Get Door stap Delivery</h6>
                             <p className="text-muted text-center small  fw-light">
                                 Duis aute irule dolor in reprehenderit
@@ -240,9 +239,8 @@ const Header = () => {
             <footer className="container mt-5">
                 <div className="row">
                     <div className="col-3 ps-0">
-                        <a href="#">
-                            <span className="rounded-circle bg-primary p-1 btn">logo</span>
-                        </a>
+                        <span className="btn rounded-circle bg-primary p-3">
+                        </span>
                     </div>
                     <div class="col-9 text-end pe-0">
                         <FontAwesomeIcon icon={faFacebookF} className="text-primary" />
